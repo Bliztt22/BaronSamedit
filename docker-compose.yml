@@ -1,0 +1,8 @@
+services:
+  target:
+    build: .
+    container_name: baron-samedit-target
+    hostname: baron-target
+    stdin_open: true
+    tty: true
+    # No privileged mode required — pure userspace heap overflow in sudo
